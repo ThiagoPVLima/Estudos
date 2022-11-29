@@ -1,0 +1,108 @@
+Curso HTML5 e CSS3
+
+HTML (Hyper Text Marcage Lenguage) - serve para marcar o texto no conteúdo web. SIGNIFICADO SEMANTICA
+Tags: são comandos que ficam dentro de sinais <tags> e para fechar </tags>.
+<h></h>
+   heading = título;
+   Existem 6 níveis de títulos;
+<p></p>
+   paragrafe = parágrafo;
+<strong></strong>
+   forte, negrito;
+<em></em>
+   emphasis = ênfse;
+<!DOCTYPE html>
+   Essa tag serve para dizer ao navegador qual versão do html estamos usando. Colocamos o !  para o DOCTYPE ser identificado e o html não precisa vir acompanhado de número pois após o HTML5 ele já sabe que queremos trabalhar com a versão mais atualizada.
+<html></html>
+   Uma tag de conteúdo que serve para marcar tudo que é html que o navegador vai reenderizar.
+   Dentro da tag html também informamos a linguagem utilizada.
+<html lang="pt-br"></html> ou seja, damos a propriedade lang (language = idioma) e pt-br português do Brasil.
+<title></title>
+   Título da página, muda o nome da página para ficar mais claro.
+<meta charset="UTF-8">
+   meta = nome da tag, que passa informações para o computador;
+<head></head>
+   Cabeça - são as informações que queremos passar para o navegador.
+<body></body>
+   Informações que eu quero exibir no navegador.
+<img> - serve para anexar uma imagem.
+   \\<ul></ul> - lista não ordenada. (unordered list).
+   <ol></ol> - lista ordenada. (ordered list).
+   <li></li> - item da lista. (iten list).
+   <div></div> - Divisão//
+
+
+
+      Tag de informação não precisa fechar.
+      Tag de conteúdo precisa abrir e fechar.
+      ESTUDAR TAG ESTRUTURAL
+
+CSS (Folha de Estilo em Cascata) - é a forma como mexemos em cada um dos elementos para podermosmostrar o site do jeito que a gente quer. ESTILO FORMA
+aqui, nós incluímos propriedades nas tags. Ex.:<p style="font-size:20px"></p>
+
+Existem três formas de mexer no CSS, inline, 2 e 3.
+Inline - Na tag do html, conhecida com "inline"; (não usa nome css e precisa repetir o código para várias linhas);
+2 - Dentro do <head> adiciona a tag <style></style>. Dentro dela adicionamos marcações de CSS referentes aos elementos do html.
+Ex.: 
+<style>
+p {
+    text-align: center
+}
+</style>
+3 - Arquivo externo. Cria-se um novo arquivo com o nome 'style.css' e fazemos uma referência no html para ele buscar.
+ <link rel="stylesheet" href="style.css">
+ link - tag;
+ rel= - relacionamento;
+ "stylesheet" -  folha de estilo;
+ href= - endereço de referência;
+ "style.css" - nome do arquivo.
+
+ Basicamente criamos funções cujo mudará tudo do html.
+ Importante que idealmente o padrão do css corresponde a  estrutura do html.
+ Para usar um css em uma coisa com o html com tags iguais, tem duas opções de solução, ou faz o css inline ou na função do css mudar para atender uma estrutura.
+ Nas tags iguais, também podemos usar os id="nomequalquer"; No arquivo css criamos uma nova função ecolocamos um # e depois o nome da id.
+ EX.:
+ p{
+    text-align: center;
+ }
+ #id{
+    font-size= 20px;
+ }
+
+ id=" ". VS class=" ".
+ id serve para marcar itens únicos. Para marcar, usamos a #.
+ class serve para marcarmos itens, para que posteriormente possamos colocar um estilo neles,porém são repetíveis.
+ Ou seja,podemos marcar todos os nossos itens com a mesma classe. Para marcar, usamos um . (ponto).
+
+<p propriedade="conteúdo:valor"></p>;
+para adicionar mais conteúdo, separamos com :. Ex.: <p style="font-size: 20px; text-align:center">
+
+!sempre em inglês!
+
+!PROPRIEDADES!
+   style"" - MEXER NISSO AQUI;
+   charset"" - conjunto de caracteres (charachters set);
+   id="" - identificação;
+   class="" - serve para marcar uma classse;
+   src="" - (source) para procurar algo;
+   charset="UTF-8" = propriedade; UTF-8 = dicionário que têm todos os caracetres mais usados nas Américas, EU, etc;
+   rel="" - relacionamento;
+   href="" - endereço de referência;
+
+!CONTEÚDO!
+   font-size: - muda tamanho da fonte;
+   text-align: - alinha o texto;
+   background: - muda a cor;
+   color: - muda a cor do objeto;
+   width: - largura;
+   height: - altura;
+   border: - borda (finalização do elemento);
+   padding-left(ou right): - espaço interno;
+
+
+!VALOR!
+   20 - números em geral;
+   center - centro;
+   itlic - deixar a fonte em itálico;
+
+A fonte é medida em pixels e como padrão já vem com 16px.
