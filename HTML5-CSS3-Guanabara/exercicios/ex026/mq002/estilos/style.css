@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* Configurações gerais */
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+list-style: none;
+}
