@@ -1,27 +1,28 @@
 @charset "UTF-8";
 
-*{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-list-style: none;
-font-family: Arial, Helvetica, sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body, html{
+body,
+html {
     background-color: lightgray;
 }
 
-header{
+header {
     background-color: gray;
 }
 
-header > h1{
+header>h1 {
     padding: 10px;
     text-align: center;
 }
 
-#burguer{
+#burguer {
     background-color: rgb(48, 48, 48);
     display: block;
     color: white;
@@ -30,20 +31,16 @@ header > h1{
     cursor: pointer;
 }
 
-#burguer:hover{
+#burguer:hover {
     background-color: white;
     color: black;
 }
 
-menu{
+menu {
     display: none;
 }
 
-menu > ul{
-    
-}
-
-menu > ul > li > a{
+menu>ul>li>a {
     display: block;
     padding: 10px;
     background-color: rgb(87, 87, 87);
@@ -51,11 +48,11 @@ menu > ul > li > a{
     border-top: 2px solid gray;
 }
 
-menu > ul > li > a:hover{
+menu>ul>li>a:hover {
     background-color: gray;
 }
 
-main{
+main {
     width: 90vw;
     background-color: white;
     margin: auto;
@@ -64,11 +61,11 @@ main{
     border-radius: 10px;
 }
 
-article > h2{
+article>h2 {
     padding-bottom: 20px;
 }
 
-article > p{
+article>p {
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
