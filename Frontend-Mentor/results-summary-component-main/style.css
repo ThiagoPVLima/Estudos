@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Cores com baixa opacidade */
+    --light-red-1: hsla(0, 100%, 67%, 0.1);
+    --orangey-yellow-1: hsl(39, 100%, 56%, 0.1);
+    --green-teal-1: hsl(166, 100%, 37%, 0.1);
+    --cobalt-blue-1: hsl(234, 85%, 45%, 0.1);
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    --light-slate-blue: hsl(252, 100%, 67%);
+    /*background*/
+    --light-royal-blue: hsl(241, 81%, 54%);
+    /*background*/
+
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    /*(circle)*/
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    /*(circle)*/
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--pale-blue);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: var(--white);
+
+    width: 740px;
+    height: 510px;
+
+    border-radius: 30px;
+}
+
+/* Lado esquerdo do card */
+
+.result_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    height: 510px;
+
+    background-image: linear-gradient(170deg,
+            var(--light-slate-blue),
+            var(--light-royal-blue) 60%);
+
+    padding: 60px;
+    padding-top: 45px;
+    border-radius: 30px;
+
+    text-align: center;
+    color: var(--white);
+}
+
+.result_subtitle {
+    color: var(--light-lavender);
+    font-weight: 500;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 100px;
+
+    background-image: linear-gradient(to top,
+            var(--persian-blue),
+            var(--violet-blue));
+}
+
+.result_number {
+    font-size: 72px;
+    font-weight: 800;
+}
+
+.result_number_sub {
+    color: var(--light-lavender);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.result_title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.result_text {
+    color: var(--light-lavender);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Lado direito do card */
+
+.summary {
+    display: grid;
+    padding: 40px;
+
+    color: var(--dark-gray-blue);
+}
+
+.results_notes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-size: 18px;
+}
+
+.results_name {
+    display: flex;
+    gap: 8px;
+}
+
+.results_note_1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 14px;
+
+    background-color: var(--light-red-1);
+
+    font-weight: 700;
+    color: var(--light-red);
+}
+
+.results_note_2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 14px;
+
+    background-color: var(--orangey-yellow-1);
+
+    font-weight: 700;
+    color: var(--orangey-yellow);
+}
+
+.results_note_3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 14px;
+
+    background-color: var(--green-teal-1);
+
+    font-weight: 700;
+    color: var(--green-teal);
+}
+
+.results_note_4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 14px;
+
+    background-color: var(--cobalt-blue-1);
+
+    font-weight: 700;
+    color: var(--cobalt-blue);
+}
+
+.results_note_number {
+    color: var(--dark-gray-blue);
+}
+
+.results_note_number_maximum {
+    color: hsla(224, 30%, 27%, 0.605);
+}
+
+button {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+
+    border: none;
+    border-radius: 50px;
+    padding: 8px;
+    margin-top: 40px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(180deg,
+            var(--light-slate-blue),
+            var(--light-royal-blue) 60%);
+}
